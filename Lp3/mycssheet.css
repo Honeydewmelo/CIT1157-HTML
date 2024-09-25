@@ -1,0 +1,50 @@
+body	{
+	background-color:yellow;margin-left:10px; margin-right:10px;
+	} 
+h1	{background:red; color:blue;text-align:center;
+	}
+h2	{background:#AA00ff; color:#FEAA00;text-align:Left;
+	border-color:red;border-radius:15px;
+	}
+ul
+	{background:Blue;
+	 color:#FF00EE;
+	 text-align:Left;
+	 font-size:160%;
+	}
+ol
+	{background:red; 
+	color:white;
+	text-indent:3em;
+	text-decoration:underline;
+	}
+p
+	{font-family:Impact, Charcoal, sans-serif;
+	}
+nav
+	{
+	background:white;
+	border:10px solid red; 
+	display:block; 
+	font-weight:bold;
+	font-size:10;
+	text-align:center;
+	padding:10px; }
+.mystyle
+	{
+	font-weight:italic;
+	color:white; 
+	font-size:18px; 
+	font-style:italic; 
+	padding:5;
+	}
+#wrapper{
+	margin:10px;
+	height:20px;
+	text-align:right;
+	background:orange;
+	}
+#style2{ALIGN:CENTER;
+	 background-color:red; 
+	 height:15px; 
+	 WIDTH:80%;}
