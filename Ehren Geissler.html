@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Customer Satisfaction Survey</title>
+	<meta charset="utf-8">
+	<style>
+	
+	body{background-color:RGB(179,179,0); width:99%;}
+    
+	div {border:1px solid black; margin:3px 3px 3px 3px;}
+
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+    }
+	
+	</style>
+	<link rel="stylesheet"href="filename" >
+
+</head>
+	<body>
+	<div style="border:5px solid black; background-color:#FFFF00;">
+		<form bgcolor="yellow" Action="mailto:ehren.geissler@lethpolytech.ca">
+			<div>
+
+				<h1 style="text-align:center;">Customer Satisfaction Survey</h1>
+
+			</div>
+			<div>
+				<p>
+					1. With regards to your most recent experience dealing with our company. What was the quality of customer service you recieved?
+					<br>
+					<input type="radio" name="QoCS" value="Ex">Excellent <br>
+					<input type="radio" name="QoCS" value="VG">Very Good <br>
+					<input type="radio" name="QoCS" value="Gd">Good <br>
+					<input type="radio" name="QoCS" value="Pr">Poor <br>
+					<input type="radio" name="QoCS" value="VP">Very Poor <br>
+				</p>
+			</div>
+			<div>
+				<p>
+					2. Taking into condiseration the features and benefits of the product itself How satisfied are you with the product?
+					<br>
+					<input type="radio" name="PS" value="Ex">Very Satisfactory <br>
+					<input type="radio" name="PS" value="VG">Satisfied <br>
+					<input type="radio" name="PS" value="Gd">Neutral <br>
+					<input type="radio" name="PS" value="Pr">Dissatisfied <br>
+					<input type="radio" name="PS" value="VP">Very Dissatisfied <br>
+				</p>
+			</div>
+			<div>
+				<p>
+					3. What are your Favourite things about this product? <br>
+					<input type="checkbox" name="ProdFaves" value="Des">Design <br>
+					<input type="checkbox" name="ProdFaves" value="Cst">Cost <br>
+					<input type="checkbox" name="ProdFaves" value="Feat">Features <br>
+					<input type="checkbox" name="ProdFaves" value="EoU">Ease of Use <br>
+					<input type="checkbox" name="ProdFaves" value="Del">Delivery <br>
+				</p>
+			</div>
+            <div>
+				<p>
+					4. The following statements refer to your recent conversation with the sales representative, please indicate whether you agree or disagree. <br> <br />
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Strongly Agree &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Agree &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Neutral &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Disagree &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Strongly Disagree <br />
+					The sales person was <br />
+					very courteous &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SRC" value="SA"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SRC" value="A"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SRC" value="N"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SRC" value="D"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SRC" value="SD"><br>
+					<br />
+					The Sales person Dealt with <br />
+					my inquiry professionally &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SPP" value="SA"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SPP" value="A"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SPP" value="N"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SPP" value="D"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="SPP" value="SD"><br>
+				</p>
+            </div>
+            <div class="flexbox" style="border: 0px solid black; margin: 0px 0px 0px 0px;">
+				<div style="width:30%;">
+					<br /><br /> Please provide us with your comment <br /><br />
+				</div>
+                <div style="width:70%;">
+                    <textarea type="textinput" name="Definition" rows="5" cols="65" style="resize: none;"></textarea>
+                </div>
+            </div>
+            <div class="flexbox" style="border: 0px solid black; margin: 0px 0px 0px 0px;">
+				<div style="width: 30%; line-height: 250%;">
+					Please submit this form
+				</div>
+                <div style="width:70%;">
+                    Your Name Please <input type="text" name="Name" required="required">  <input type="submit" name="submitted" value="Send">
+                    <br /> To clear this form, please click here &nbsp <input type="reset" value="clear">
+                </div>
+            </div>
+		</form>
+	</div>
+	</body>
+</html>

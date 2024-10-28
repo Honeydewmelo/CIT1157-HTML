@@ -1,0 +1,68 @@
+<html lang="en">
+<html lang="en">
+<head>
+    <title>Layout</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        
+    ul {list-style: none;padding: 0px;margin: 0px;}
+		ul li {display:block; position:relative; float:left; border:1px solid blue;}
+		li ul {display:none;}
+		ul li a {display:block; background:red; padding:5px 10px 5px 10px; text-decoration:none; white-space:nowrap; color:white;}
+		ul li a:hover {background: green;}
+		li:hover ul {display:block; position:absolute; background:pink}
+		li:hover li {float:none; background:yellow}
+		li:hover a {background:orange;}
+		li:hover li a:hover {background:brown;}
+      
+    </style>
+</head>
+<body bgcolor="#008C69">
+<ul id="drop">        <!-- no need for this  id -->
+<li><a href="menu.html">Home</a> </li>
+<li><a href="#">Lessons</a>
+        <ul>
+          <li><a href="http:\\wwww.w3schools.com">Html</a> </li>
+           <li><a href="http://www.math.grin.edu/~rebelsky/Courses/152/97F/Readings/student-binary">Math</a>
+           </li>
+              <li> <a href="https://developer.mozilla.org/en-    US/docs/Web/CSS/Reference">CSS </a>
+            </li>
+         </ul>
+ </li>
+
+ <li><a href="#">Projects</a>
+    <ul>
+      <li><a href="#">Web Design</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">Database</a></li>
+      <li><a href="#">Computing</a></li>
+    </ul>
+  </li>
+
+ <li><a href="http://www.lethpolytech.ca/">College</a>
+    <ul>
+      <li>
+    <a href="http://www.lethpolytech.ca/admissions">Admission</a>
+     </li>
+      <li>
+    <a href="http://www.lethpolytech.ca/admissions/course-    timetables">Time table</a>
+      </li>
+    </ul>
+  </li>
+</ul>     <!-- for the first UL -->
+
+
+<div class="div_one">
+<select onchange="window.location.href=this.value" style="background:yellow;Color:red; padding:0px;">
+   
+    <option ><a href="https://www.google.com"> Google</a> </option>
+       <option value="https://www.google.com">Mysite</option>
+       <option value="index.html">Class</option>
+       <option value="http://www.lethpolytech.ca/">College</option>
+       <option value="http://www.uleth.ca/">University</option>
+       <option value="http://www.lethbridge.ca">City</option>
+       <option value="http://alberta.ca" src=url('http://www.lethpolytech.ca')>Province</option>
+</select>
+</div>
+</body>
+</html>
