@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  display:block;
+  background-color: yellow;
+  min-width:70%; //minimum is limited
+}
+
+.box > div {
+  background-color: #f00000;
+  border-style: dotted;
+  margin: 25px;
+  padding: 25px;
+  width:80%; //or use exmple 500 px, % or px set as part of div
+}
+</style>  <!-- change flex to to block, inline, or none-->
+</head>
+<body>
+
+<h1>Flexing box</h1>
+
+<div class="flex-box">
+  <div>Section 1 ,Section 1, Section 1, Section 1,Section 1 ,Section 1, Section 1, Section 1, Section 1 ,Section 1, Section 1, Section 1</div>
+  <div>B section 2</div>
+  <div>Section c3</div>  
+</div>
+</body>
+</html>
