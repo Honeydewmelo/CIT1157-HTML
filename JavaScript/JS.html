@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>JS</title>
+	<meta charset="utf-8">
+	<style>
+	</style>
+	<script LANGUAGE="javascript" type="text/javascript">
+	let buttonPushed = 0;
+	function myExample1(){
+	buttonPushed = buttonPushed + 1;
+	document.getElementById('output').innerHTML = buttonPushed;
+	}
+	</script>
+	</head>
+	<body>
+	<p align="center">
+	<input type="button" onclick="myExample1()" value="Click">
+	 <h1>You have pushed the button </h1><h1 id="output" style="float:left;"></h1> <h1 style="float:left;"> times</h1>
+	</p>
+	</body>
