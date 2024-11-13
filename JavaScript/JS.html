@@ -9,16 +9,25 @@
 	<style>
 	</style>
 	<script LANGUAGE="javascript" type="text/javascript">
-	let buttonPushed = 0;
-	function myExample1(){
-	buttonPushed = buttonPushed + 1;
-	document.getElementById('output').innerHTML = buttonPushed;
+		let buttonPushed = 0;
+		function myExample1() {
+		buttonPushed = buttonPushed + 1;
+			document.getElementById('output').innerHTML = buttonPushed;
+			if (buttonPushed == 1) {
+				document.getElementById('timeOrTimes').innerHTML = "&nbsp time"
+			}
+			else if (buttonPushed == 69) {
+				document.getElementById('timeOrTimes').innerHTML = "&nbsp times, Nice"
+			} else {
+                document.getElementById('timeOrTimes').innerHTML = "&nbsp times"
+			}
 	}
 	</script>
 	</head>
 	<body>
 	<p align="center">
 	<input type="button" onclick="myExample1()" value="Click">
-	 <h1>You have pushed the button </h1><h1 id="output" style="float:left;"></h1> <h1 style="float:left;"> times</h1>
+	 <h1 style="float:left;">You have pushed the button &nbsp</h1>  <h1 id="output" style="float:left;">0</h1>  <h1 style="float:left;" id="timeOrTimes">&nbsp times</h1>
 	</p>
 	</body>
+</html>
