@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>slide</title>
+</head>
+<body>
+    <audio autoplay="autoplay" loop="loop" hidden="hidden">
+        <source src="Slide/SleepAway.mp3" type="video/mpeg" />
+    </audio>
+    <h3>This is a slide show</h3>
+    <h3>Please enter delay time for each slide in seconds: </h3>
+    <script>
+        delay = (prompt("Enter delay for slide show in seconds") * 1000);
+        document.write("<br>" + "This is a slide show with delay. You have entered delay = " + (delay / 1000) + " seconds" + "<br>")
+    </script>
+    <image name="moving" style="width:450px; height:300px;"></image>
+    <script>
+        var pictures = ["Slide/pic1.gif", "Slide/pic2.jpg", "Slide/pic3.png", "Slide/pic4.jpg", "Slide/pic5.jpg", "Slide/pic6.jpg"];
+        var i = 0;
+        function slidePicture() {
+            document.moving.src = pictures[i];
+            var k = (pictures.length - 1);
+            if (i < k) {
+                i++;
+            }
+            else {
+                i = 0;
+            }
+            if (delay > 0) {
+                setTimeout("slidePicture()", delay);
+            }
+            else {
+                setTimeout("slidePicture()", 1000)
+            }
+        }
+        window.onload = slidePicture();
+    </script>
+</body>
+</html>
