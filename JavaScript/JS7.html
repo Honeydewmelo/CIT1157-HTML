@@ -1,0 +1,49 @@
+﻿<html>
+<head>
+    <script LANGUAGE="Javascript" type="text/javascript" src="quadriequ.js"></script>
+    <style>
+        td button:hover {
+            background-color: orange;
+        }
+
+        button {
+            background-color: yellow;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" style="color:black">
+        <table style="align:center; border:5;width:50%; border-color:yellow; background-color:red; font:Yellow;">
+            <tr>
+                <td colspan="2" style="border-style:solid; border-color:blue" align="center"> Click On a Button To Select a Function to Execute</td>
+            </tr>
+
+            <tr>
+                <td style="background-color:pink;"> <button style="border-style:solid; border-color:blue;width:100%; " align="center" onclick="power()">Power Function</button>    </td>
+                <td> <button style="border-style:solid; border-color:blue;width:100%; " align="center" onclick="logTen()">Log Function</button>  </td>
+
+            </tr>
+            <tr>
+
+                <td> <button style="border-style:solid; border-color:blue; width:100%; " align="center" width="100%" onclick="Octal()">Decimal to Octal</button>    </td>
+                <td>  <button style="border-style:solid; border-color:blue; width:100%; " align="center" onclick="quadra()">Quadratic Equation</button>  </td>
+
+            </tr>
+
+        </table>
+    </div>
+    <script>
+
+function power()
+{
+document.write("Enter the value of x, y for z=x^y:"+"<br>");
+var x,y,z;
+x=prompt("Enter the value of x=" ,"")
+y=prompt("Enter the value of y=" ,"")
+document.write("z=x^y= "+Math.pow(x,y));
+}
+    </script>
+</body>
+</html>

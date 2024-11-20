@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>NLog</title>
+</head>
+<body>
+    <script>
+
+        function mul(x, y) {
+            return x * y;
+        }
+
+        choice = prompt("Enter M for Multiplication, N for Log:");
+        document.write("<br>");
+        y = prompt("Enter value for Y: ");
+        document.write("<br>");
+        if (choice == "M") {
+
+            x = prompt("Enter value for X: ");
+            document.write("Y * X = " + mul(x, y));
+        } else {
+            document.write("Natural Log of Y = " + Math.log(y));
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var currentDate = new Date();
+        var hours = currentDate.getHours();
+        var day = currentDate.getDay();
+        document.write(currentDate + "<br>");
+        document.write("<hr>" + hours + "<br>");
+        document.write("<hr>" + "Day: " + day + ", " + daysOfWeek[day]);
+
+        if (day == 0) { //Sunday 
+            document.write("<br>" + "Go to Movie");
+        } else if (day == 6) {
+            document.write("<br>" + "Rest");
+        } else {
+            document.write("<br>" + "ok");
+        }
+        document.write("<br>" + "These are the days of the week:" + "<hr>");
+        for (i = 0; i < 7; i++) {
+            document.write(daysOfWeek[i] + "<br>");
+        }
+
+    </script>
+</body>
+</html>
