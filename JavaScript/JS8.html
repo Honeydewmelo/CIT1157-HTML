@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Multiplication Table</title>
+</head>
+<body bgcolor="orange">
+    <div align="center" style="color:black">
+        <script type="text/javascript">
+            var rowN, colN, i, j;
+            rowN = prompt("Row Size: ", "");
+            colN = prompt("Column Size: ", "");
+            document.write("<h2><font color=blue>Multiplication Table Generates 12x12 max. Requested: </font>" + rowN + "x" + colN + "</h2> <table bgcolor=yellow border=5>");
+            for (i = 1; i <= rowN && i <= 12; i++) {
+                document.write("<tr>")
+                for (j = 1; j <= colN && j <= 12; j++) {
+                    document.write("<td>" + (i * j) + "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        </script>
+    </div>
+</body>
+</html>
