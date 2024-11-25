@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function mul() {
+            var x;
+            var y;
+            var z;
+            var n;
+            var m;
+            return x * y;
+        }
+        document.write("<br><br><br><br>");
+        x = prompt("Enter X: ");
+        document.write("<br>" + "x = " + x);
+        y = prompt("Enter Y: ");
+        document.write("<br>" + "y = " + y);
+        document.write("<br>");
+        document.write("<br>" + "Select a number for calculation <br>" + "Enter:<br> A for Power <br> B for Nat Log <br> C for Binary <br> D for Hex <br> E for Octal <br>");
+        n = prompt("Enter a, b, c, d, or e: ");
+        document.write("<br> Entered: " + n);
+        switch (n) {
+            case 'A':
+			case 'a':
+                document.write("<br> y root of x = " + math.pow(x, y));
+                break;
+            case 'B':
+			case 'b':
+                document.write("<br>" + "Log of x base y: " + math.log(x) / math.log(y));
+                break;
+            case 'C':
+			case 'c':
+                document.write("<br>" + "X base 2: " + parseInt(x, 10).toString(2));
+                break;
+            case 'D':
+			case 'd':
+                document.write("<br>" + "X base 16: " + parseInt(x, 10).toString(16));
+                break;
+			case 'E':
+			case 'e':
+				document.write("<br>" + "X base 16: " + parseInt(x, 10).toString(8));
+				break;
+        }
+
+    </script>
+</body>
+</html>
