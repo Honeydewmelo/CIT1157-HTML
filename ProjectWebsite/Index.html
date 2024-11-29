@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TempCo Index</title>
+    <link rel="stylesheet" href="Style.css">
+    
+    <script language="Javascript" type="text/javascript">
+        
+        function getDate() {
+            document.getElementById("dateIn").innerHTML = "Today's Date is: " + new Date().toDateString();
+        }
+        function slideShow() {
+            var images = ["Images/Slide0.jpg", "Images/Slide1.jpg", "Images/Slide2.jpg", "Images/Slide3.jpg", "Images/Slide4.jpg", "Images/Slide5.jpg", "Images/Slide6.jpg", "Images/Slide7.jpg", "Images/Slide8.jpg", "Images/Slide9.jpg"];
+            document.slideShow.src = images[i];
+            if (i == images.length - 1) {
+                i = 0;
+            } else {
+                i++;
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="logoBox"> <image src="Images/Logo.png"></image></div>
+            <div class="titleText"><h1>TempCo</h1></div>
+            <div>
+                <div class="currDate" id="dateIn"></div>
+                <div class="searchBar">
+                    <form action="https://www.google.com/search">
+                        <input type="hidden" value="Search" name="action1">
+                        <strong>Search:</strong>
+                        <input type="text" name="query" placeholder="Search on Google" size="20" maxlength="70">
+                        <input type="submit" name="Submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="Index.html">Home</a> </li>
+                <li>
+                    <a href="Survey.html">Survey</a>
+                </li>
+
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">TempServ</a></li>
+                        <li><a href="#">TempServ</a></li>
+                        <li><a href="#">TempServ</a></li>
+                        <li><a href="#">TempServ</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="https://lethpolytech.ca/wider-horizons/fall-2024">News</a>
+                    <ul>
+                        <li>
+                            <a href="https://lethpolytech.ca/wider-horizons/fall-2024">News</a>
+                        </li>
+                        <li>
+                            <a href="https://lethpolytech.ca/events-calendar">Upcoming Events</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <image name="slideShow" class="slideImg">
+            </image>
+        </div>
+
+        <div class="info"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p></div>
+
+        <div class="video">
+            <video class="vid" controls>
+                <source src="Video/SwapRun.mp4" />
+            </video>
+        </div>
+
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d241.77781857909358!2d-112.80195598937382!3d49.67545642915154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1732816285965!5m2!1sen!2sca" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+        <div class="info" style="text-align:right;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ornare nunc. Duis vel congue leo. Ut blandit arcu sem, non sagittis purus consequat ac. Donec sodales, justo vel faucibus rhoncus, velit ante efficitur tortor, nec egestas mi leo id arcu. Mauris libero nulla, pulvinar at semper eget, suscipit vel orci. In hendrerit lacinia leo vel pharetra. Donec egestas congue neque, quis vestibulum ante semper sit amet. Etiam nec ligula orci. </p></div>
+
+        <div class="table">
+            <table class="flexing" width="450" cellpadding="10" cellspacing="2" border="3">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th colspan="3"></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center" colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+
+    </div>
+    <hr />
+    <footer>
+        <div style="float: left; width: 50%" ;>
+            <a href="https://X.com"><image class="SMLinks" src="Images/X.png"></image></a>
+            <a href="https://www.facebook.com"><image class="SMLinks" src="Images/Facebook.png"></image></a>
+            <h3>Address: atz 129, Ave, City, Canada, A2Z 1T3.</h3>
+        </div>
+        <div style="float: right; width: 50%;">
+            <h3 text-align="left">Copyright 2024 | Privacy Policy | Legal Issues</h3>
+        </div>
+    </footer>
+
+    <script>
+        let i = 0;
+        getDate();
+        slideShow();
+        const intervalID = window.setInterval(slideShow, 10000);
+    </script>
+</body>
+</html>

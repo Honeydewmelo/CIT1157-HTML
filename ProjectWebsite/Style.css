@@ -1,0 +1,200 @@
+﻿body {
+    background-color: gray;
+}
+.wrapper {
+    float: left;
+    background-color: lightcyan;
+    width: 99%;
+    margin-bottom: 10%
+}
+.header {
+    background-color: darkcyan;
+    text-align: center;
+    border: 5px dashed white;
+    display:flex;
+
+}
+.nav {
+    float: left;
+    background-color: gray;
+    width: 90px;
+    height: 80%;
+    margin: 5px 5px 5px 5px;
+    padding: 20px;
+    border: 5px double white;
+    text-align: center;
+    position: relative;
+}
+.slide {
+    float: left;
+    background-color: gray;
+    width: 212px;
+    height: 212px;
+    margin: 5px 5px 5px 5px;
+    border: 5px solid blue;
+    text-align: center;
+}
+.info {
+    float: left;
+    background-color: gray;
+    width: 35%;
+    height: 50%;
+    margin: 5px 5px 5px 5px;
+    border: 5px solid blue;
+    text-align: left;
+}
+.video {
+    float: left;
+    background-color: gray;
+    width: 360px;
+    height: 212px;
+    margin: 5px 12px 5px 5px;
+    border: 5px solid blue;
+    text-align: left;
+}
+.map {
+    float: left;
+    background-color: gray;
+    border: 5px solid blue;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+}
+.moreInfo {
+    float: left;
+    background-color: gray;
+    width: 31%;
+    height: 80px;
+    margin: 15px;
+    text-align: right;
+}
+.table {
+    float: left;
+    background-color: gray;
+    margin: 15px;
+}
+tr {
+    background-color: green;
+}
+.logoBox{
+    float:left;
+    background-color:green;
+    width:100px;
+    height:100px;
+    margin:3px;
+}
+.titleText {
+    margin: auto;
+    position: relative;
+    background-color: cyan;
+    border:5px solid blue;
+}
+.currDate{
+    background-color:darkcyan;
+    height:40%;
+}
+.searchBar {
+    background-color: darkcyan;
+    height: 40%;
+}
+.slideImg{
+    width:212px;
+    height:212px;
+}
+.vid{
+    width:360px;
+    height:212px;
+}
+
+.flexing {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    background-color: gray;
+}
+
+footer {
+    background-color: darkcyan;
+    text-align: center;
+    border: 5px dashed white;
+    position:fixed;
+    width:98%;
+    bottom:0px;
+    left:1%;
+}
+
+.SMLinks{
+    width:50px;
+    height:50px;
+    margin:5px;
+    float:left;
+}
+
+.survey{
+    float:left;
+    width:70%;
+    border: 5px double white;
+
+}
+
+
+ul {
+    width:150%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    width:90px;
+        display: block;
+        position: relative;
+        float: left;
+        border: 1px solid blue;
+    }
+ul li ul li {
+    width: 150px;
+    display: block;
+    position: relative;
+    float: left;
+    text-align:center;
+    border: 1px solid blue;
+    }
+
+li ul {
+    display: none;
+}
+
+ul li a {
+    
+    display: block;
+    background: darkcyan;
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+    white-space: nowrap;
+    color:black;
+}
+
+    ul li a:hover {
+        background: cyan;
+    }
+
+li:hover ul {
+    display: block;
+    left:100%;
+    top:0%;
+    position: absolute;
+}
+
+li:hover li {
+    float: none;
+    background: cyan
+}
+
+li:hover a {
+    background: cyan;
+}
+
+li:hover li a:hover {
+    background: darkcyan;
+}

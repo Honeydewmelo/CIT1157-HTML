@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TempCo Index</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="logoBox"> <image src="Images/Logo.png"></image></div>
+            <div class="titleText"><h1>TempCo</h1></div>
+            <div>
+                <div class="currDate" id="dateIn"></div>
+                <div class="searchBar">
+                    <form action="https://www.google.com/search">
+                        <input type="hidden" value="Search" name="action1">
+                        <strong>Search:</strong>
+                        <input type="text" name="query" placeholder="Search on Google" size="20" maxlength="70">
+                        <input type="submit" name="Submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="Index.html">Home</a> </li>
+                <li>
+                    <a href="Survey.html">Survey</a>
+                </li>
+
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">TempServ</a></li>
+                        <li><a href="#">TempServ</a></li>
+                        <li><a href="#">TempServ</a></li>
+                        <li><a href="#">TempServ</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="https://lethpolytech.ca/wider-horizons/fall-2024">News</a>
+                    <ul>
+                        <li>
+                            <a href="https://lethpolytech.ca/wider-horizons/fall-2024">News</a>
+                        </li>
+                        <li>
+                            <a href="https://lethpolytech.ca/events-calendar">Upcoming Events</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="survey">
+
+            <form bgcolor="yellow" Action="mailto:ehren.geissler@lethpolytech.ca">
+                <div>
+
+                    <h1 style="text-align:center;">Survey</h1>
+
+                </div>
+                <div>
+                    <p>
+                        1. With regards to your most recent experience dealing with our company. What was the quality of service you recieved?
+                        <br>
+                        <input type="radio" name="QoCS" value="Ex">Excellent <br>
+                        <input type="radio" name="QoCS" value="VG">Very Good <br>
+                        <input type="radio" name="QoCS" value="Gd">Good <br>
+                        <input type="radio" name="QoCS" value="Pr">Poor <br>
+                        <input type="radio" name="QoCS" value="VP">Very Poor <br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        2. What are your Favourite things about this product? <br>
+                        <input type="checkbox" name="ProdFaves" value="Des">Design <br>
+                        <input type="checkbox" name="ProdFaves" value="Cst">Cost <br>
+                        <input type="checkbox" name="ProdFaves" value="Feat">Features <br>
+                        <input type="checkbox" name="ProdFaves" value="EoU">Ease of Use <br>
+                        <input type="checkbox" name="ProdFaves" value="Del">Delivery <br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        3. This website is good <br />
+                        <input type="radio" name="TF" value="T">True <br>
+                        <input type="radio" name="TF" value="F">False <br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        4. Fill in the blank: <br />
+                        HTML is a(n) <input type="text" name="Q4" required="required"> language.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        5. Select the quality of this website: <br>
+                        <select name="WSQ">
+                            <option value="VG">Very Good</option>
+                            <option value="G">Good</option>
+                            <option value="B">Bad</option>
+                            <option value="VB">Very Bad</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        6. Do it again but like this: <br />
+                        <select name="WSQAgain" multiple size="3">
+                            <option value="VG">Very Good</option>
+                            <option value="G">Good</option>
+                            <option value="B">Bad</option>
+                            <option value="VB">Very Bad</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="flexbox" style="border: 0px solid black; margin: 0px 0px 0px 0px;">
+                    <div style="width:30%;">
+                        <br /><br /> How can I improve this site? <br /><br />
+                    </div>
+                    <div style="width:70%;">
+                        <textarea type="textinput" name="Definition" rows="5" cols="65" style="resize: none;"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        Upload a File:
+                        <input type="file" name="myfile">
+                    </p>
+                </div>
+                <div class="flexbox" style="border: 0px solid black; margin: 0px 0px 0px 0px;">
+                    <div style="width: 30%; line-height: 250%;">
+                        Please submit this Survey
+                    </div>
+                    <div style="width:70%;">
+                        Your Email Please:  <input type="text" name="getmail">  <input type="submit" name="submitted" value="Send">
+                        <br /> To clear this form, please click here &nbsp <input type="reset" value="clear">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <hr />
+    <footer>
+        <div style="float: left; width: 50%" ;>
+            <a href="https://X.com"><image class="SMLinks" src="Images/X.png"></image></a>
+            <a href="https://www.facebook.com"><image class="SMLinks" src="Images/Facebook.png"></image></a>
+            <h3>Address: atz 129, Ave, City, Canada, A2Z 1T3.</h3>
+        </div>
+        <div style="float: right; width: 50%;">
+            <h3 text-align="left">Copyright 2024 | Privacy Policy | Legal Issues</h3>
+        </div>
+    </footer>
+</body>
+</html>
